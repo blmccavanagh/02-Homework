@@ -4,7 +4,6 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
     color: white;
     background-image: url("../images/background-image-1.jpg");
     scroll-behavior: smooth;
