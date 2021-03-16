@@ -4,17 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bridget McCavanagh - Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/helper.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/flex.css">
 </head>
 
 <body>
 
     <!-- header -->
-    <header>
-        <h1>Just call me B.</h1>
+    <header class="flex">
+        <h1 class="header-name"><span class="handwriting shadow header-padding">Just call me</span><span id="header">B.</span></h1>
         <!-- nav -->
-        <nav>
-            <ul>
+        <nav class="glow">
+            <ul class="nav-items flex">
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
@@ -28,24 +36,49 @@
         </nav>
     </header>
 
+        <!-- include absolute positioned sidebar -->
+<div class="position-sticky">
+    <div id="sidebar">
+        <div>
+            <ul>
+                <li class="sidebar">123</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="sidebar">123</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="sidebar">123</li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- <img width="1.5rem" src="./assets/images/favicon.jpg" alt=""> -->
+    </div>
+
     <!-- flex container -->
 
-    <!-- hero pic and bio-->
-    <section>
-        <section>
+    <section class="flex">
 
-            <article>
-                <h1>about me...</h1>
-                <img width="auto" src="" alt="">
+    <!-- hero pic and bio-->
+
+        <section class="flex">
+
+            <!-- section header -->
+            <article class="section-header position-rel">
+                <h1 class="position-abs glow handwriting">about me...</h1>
+                <img class="hero" src="./assets/images/transparent-headshot.png" alt="Headshot of Bridget McCavanagh">
             </article>
 
-            <article>
-                <div>
-                    <h1>My name is Bridget Louise McCavanagh...</h1>
-                    <h2>...but call me B.</h2>
-                </div>
+            <article class="section-border item2">
+                
+                    <h1>My name is <span class="handwriting shadow statement">Bridget Louise McCavanagh</span>. . .</h1>
+                    <h2>. . . but call me <span class="handwriting shadow statement underline">B.</h2>
 
-                <div>
+                <div class="">
                     <!-- p tags here-->
                     <p>I do many things.</p>
                     <p>I have been running my own Personal Training business for over 5 years, specialising in Exercise
@@ -62,39 +95,55 @@
                         keep us learning. They keep us nimble and creative and keep us focussed on expansion, not
                         stagnation.</p>
                     <p>Enough talk, the work below can say the rest.</p>
-                    <p>If you are interested in working with me, contact me <a href="#contact">here.</a></p>
+                    <p>If you are interested in working with me, contact me <a href="#contact" class="handwriting shadow statement underline">here.</a></p>
                 </div>
             </article>
         </section>
+
     </section>
 
     <!-- portfolio -->
     <!-- multiple flex containers for portfolio layout -->
-    <section>
-        <section>
-            <h1>portfolio ...</h1>
+    <!-- <section> -->
+
+        <!-- section header -->
+        <section class="section-header position-rel">
+            <h1 class="position-abs glow handwriting">portfolio ...</h1>
         </section>
-        <article>
+
+<section class="margin-left">
+        <article class="section-border flex">
+            <div class="item2">
 
             <!-- flex layout, lots of 1 by 3 blocks -->
-            <div>
 
                 <!-- main portfolio image and link -->
-                <div></div>
+                <div class="item3>
+                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
+                </div>
                 <!-- middle portfolio images and links -->
-                <div></div>
+                <div class="flex item4">
+                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
+                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
+                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
+                </div>
                 <!-- lower portfolio images and links -->
+                    <div class="flex">
+                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
+                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
+                </div>
             </div>
         </article>
     </section>
 
     <!-- footer -->
-    <section>
-        <section>
-            <h1>contact me ...</h1>
+    <section class="flex">
+        <section class="position-rel section-header">
+            <h1 class="position-abs glow handwriting">contact me ...</h1>
         </section>
-        <div>
-            <footer>
+        <section class="contact-margin-left">
+            <br>
+            <footer class="section-border item6" style="font-size: 1.3rem;">
                 <a href=""><img src="">phone</a>
                 <a href=""><img src="">email</a>
                 <a href=""><img src="">LinkedIn</a>
@@ -102,7 +151,7 @@
                 <a href=""><img src="">instagram</a>
                 <a href=""><img src="">twitter</a>
             </footer>
-        </div>
+        </section>
     </section>
 
 </body>

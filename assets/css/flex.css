@@ -1,0 +1,64 @@
+.flex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.item1 {
+    padding-right: 7rem;
+}
+
+.item2 {
+    margin-left: 2rem;
+}
+
+.item2 img {
+    object-fit: cover;
+}
+
+.item3 {
+    flex-basis: 100%;
+    margin-right: 1rem;
+}
+
+.item4 {
+    flex-shrink: 1;
+}
+
+.flex-shrink {
+    flex-shrink: 1;
+}
+
+.flex-item {
+    margin: 0.5rem;
+    border: double 4px rgb(161, 161, 161);
+}
+
+.item5 {
+    align-content: center;
+}
+
+.item6 {
+    flex-basis: 100%;
+    
+}
+
+.item7 {
+    
+}
+
+.item8 {
+    
+}
+
+.item9 {
+    
+}
+
+.item10 {
+    
+}
