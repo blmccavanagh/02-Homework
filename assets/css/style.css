@@ -93,6 +93,7 @@ nav ul li {
     display: inline-block;
     margin-left: 1.5rem;
     border-left: 6px groove rgb(61, 61, 61);
+    border-radius: 0.5rem;
     padding: 1.5rem 0 1.5rem 0.8rem;
     font-size: 1.4rem;
 }
