@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/helper.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/flex.css">
 </head>
 
@@ -19,7 +20,8 @@
 
     <!-- header -->
     <header class="flex">
-        <h1 class="header-name"><span class="handwriting shadow header-padding">Just call me</span><span id="header">B.</span></h1>
+        <h1 class="header-name"><span class="handwriting shadow header-padding">Just call me</span><span
+                id="header">B.</span></h1>
         <!-- nav -->
         <nav class="glow">
             <ul class="nav-items flex">
@@ -36,34 +38,22 @@
         </nav>
     </header>
 
-        <!-- include absolute positioned sidebar -->
-<div class="position-sticky">
+    <!-- include absolute positioned sidebar -->
     <div id="sidebar">
-        <div>
-            <ul>
-                <li class="sidebar">123</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li class="sidebar">123</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li class="sidebar">123</li>
-            </ul>
-        </div>
-        </div>
-
-        <!-- <img width="1.5rem" src="./assets/images/favicon.jpg" alt=""> -->
+        <ul>
+            <li class="sidebar">123</li>
+            <li class="sidebar">123</li>
+            <li class="sidebar">123</li>
+        </ul>
     </div>
+
+    <!-- <img width="1.5rem" src="./assets/images/favicon.jpg" alt=""> -->
 
     <!-- flex container -->
 
     <section class="flex">
 
-    <!-- hero pic and bio-->
+        <!-- hero pic and bio-->
 
         <section class="flex">
 
@@ -73,12 +63,12 @@
                 <img class="hero" src="./assets/images/transparent-headshot.png" alt="Headshot of Bridget McCavanagh">
             </article>
 
-            <article class="section-border item2">
-                
-                    <h1>My name is <span class="handwriting shadow statement">Bridget Louise McCavanagh</span>. . .</h1>
-                    <h2>. . . but call me <span class="handwriting shadow statement underline">B.</h2>
+            <article class="section-border item1">
 
-                <div class="">
+                <h1>My name is <span class="handwriting shadow statement">Bridget Louise McCavanagh</span>. . .</h1>
+                <h2>. . . but call me <span class="handwriting shadow statement underline">B.</h2>
+
+                <div>
                     <!-- p tags here-->
                     <p>I do many things.</p>
                     <p>I have been running my own Personal Training business for over 5 years, specialising in Exercise
@@ -95,55 +85,48 @@
                         keep us learning. They keep us nimble and creative and keep us focussed on expansion, not
                         stagnation.</p>
                     <p>Enough talk, the work below can say the rest.</p>
-                    <p>If you are interested in working with me, contact me <a href="#contact" class="handwriting shadow statement underline">here.</a></p>
+                    <p>If you are interested in working with me, contact me <a href="#contact"
+                            class="handwriting shadow statement underline">here.</a></p>
                 </div>
             </article>
         </section>
 
     </section>
 
-    <!-- portfolio -->
-    <!-- multiple flex containers for portfolio layout -->
-    <!-- <section> -->
+    <!-- grid portfolio -->
 
-        <!-- section header -->
-        <section class="section-header position-rel">
-            <h1 class="position-abs glow handwriting">portfolio ...</h1>
-        </section>
+    <section class="grid-container">
+        <h1 id="grid-header" class="handwriting glow">portfolio ...</h1>
+        <a id="feature" class="grid-border radius1" href=""><img class="portfolio-image"
+                src="./assets/images/exolvo.jpg" alt=""><span class="handwriting">Portfolio: One</span></a>
 
-<section class="margin-left">
-        <article class="section-border flex">
-            <div class="item2">
+        <a class="grid-border radius2" href=""><img class="portfolio-image" src="./assets/images/scotland-2.jpg"
+                alt=""><span class="handwriting">Portfolio: Two</span></a>
+        <a class="grid-border" href=""><img class="portfolio-image" src="./assets/images/scotland-1.jpg"
+                alt=""><span class="handwriting">Portfolio: Three</span></a>
+        <a class="grid-border radius3" href=""><img class="portfolio-image" src="./assets/images/scotland-3.jpg"
+                alt=""><span class="handwriting">Portfolio: Four</span></a>
 
-            <!-- flex layout, lots of 1 by 3 blocks -->
+        <a id="vertical" class="grid-border" href=""><img class="portfolio-image" src="./assets/images/smoke.jpg"
+                alt=""><span class="handwriting">Portfolio: Five</span></a>
 
-                <!-- main portfolio image and link -->
-                <div class="item3>
-                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
-                </div>
-                <!-- middle portfolio images and links -->
-                <div class="flex item4">
-                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
-                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
-                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
-                </div>
-                <!-- lower portfolio images and links -->
-                    <div class="flex">
-                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
-                    <a class="flex-item" href=""><img src="./assets/images/image-1.jpg" alt="" class="cover"></a>
-                </div>
-            </div>
-        </article>
+        <a class="grid-border radius4" href=""><img class="portfolio-image" src="./assets/images/perth-at-night.jpg"
+                alt=""><span class="handwriting">Portfolio: Six</span></a>
+        <a class="grid-border radius5" href=""><img class="portfolio-image" src="./assets/images/dutoit-headshot.jpg"
+                alt=""><span class="handwriting">Portfolio: Seven</span></a>
+
+        <a id="horizontal" class="grid-border" href=""><img class="portfolio-image" src="./assets/images/arrow.jpg"
+                alt=""><span class="handwriting">Portfolio: Eight</span></a>
     </section>
 
     <!-- footer -->
     <section class="flex">
-        <section class="position-rel section-header">
+        <article class="position-rel contact-section-header">
             <h1 class="position-abs glow handwriting">contact me ...</h1>
-        </section>
-        <section class="contact-margin-left">
+        </article>
+        <section class="section-border contact-info">
             <br>
-            <footer class="section-border item6" style="font-size: 1.3rem;">
+            <footer>
                 <a href=""><img src="">phone</a>
                 <a href=""><img src="">email</a>
                 <a href=""><img src="">LinkedIn</a>
@@ -151,6 +134,8 @@
                 <a href=""><img src="">instagram</a>
                 <a href=""><img src="">twitter</a>
             </footer>
+            <p class="handwriting neon">call me, beep me, if you wanna reach me...</p>
+            <br>
         </section>
     </section>
 

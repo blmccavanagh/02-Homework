@@ -128,15 +128,17 @@ a {
 }
 
 #sidebar {
-    position: absolute;
-    top: 25rem;
-    right: 0;
+    position: fixed;
+    bottom: 5rem;
+    left: 0;
     width: 2rem;
-    background: rgb(199, 199, 199);
+    background: rgb(199, 199, 199, 0.3);
+    z-index: 99;
 }
 
 .sidebar {
     padding: 2px;
+    margin-top: 1rem;
     border: groove 2px gray;
 }
 
@@ -197,5 +199,30 @@ a {
 }
 
 .contact-margin-left {
-    margin-left: 10rem;
+    margin-left: 2rem;
+    width: 100%;
+}
+
+footer {
+    align-content: center;
+    font-size: 1.3rem;
+}
+
+.contact-section-header {
+    width: 37rem;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+footer+p {
+    text-align: right;
+    padding-right: 4rem;
+}
+
+.neon {
+    color: #000000;
+    animation: flicker 1.5s infinite alternate;
+}
+.contact-info {
+    width: 100%;
 }
