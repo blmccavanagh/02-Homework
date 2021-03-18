@@ -10,6 +10,23 @@ body {
     box-sizing: border-box;
 }
 
+.position-rel{
+    position: relative;
+}
+
+.position-abs {
+    position: absolute;
+}
+
+.position-sticky {
+    position: sticky;
+}
+
+h1.position-abs {
+    top: 0;
+    right: 0;
+}
+
 .handwriting {
     font-family: 'Homemade Apple', cursive;
 }
@@ -198,14 +215,16 @@ a {
     padding-bottom: 2rem;
 }
 
-.contact-margin-left {
+/* .contact-margin-left {
     margin-left: 2rem;
     width: 100%;
-}
+} */
 
-footer {
+.contact {
     align-content: center;
     font-size: 1.3rem;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .contact-section-header {
@@ -222,7 +241,22 @@ footer+p {
 .neon {
     color: #000000;
     animation: flicker 1.5s infinite alternate;
+    text-align: right;
 }
 .contact-info {
     width: 100%;
+}
+
+.display-inline {
+    display: inline-block;
+}
+
+.icon {
+    border: 2px dotted grey;
+    border-radius: 6rem 2rem;
+}
+
+.border-bottom {
+    border: 2px 0 dotted rgb(77, 76, 76);
+    border-radius: 10rem 1rem 10rem 1rem;
 }
