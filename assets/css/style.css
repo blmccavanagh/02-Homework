@@ -215,11 +215,6 @@ a {
     padding-bottom: 2rem;
 }
 
-/* .contact-margin-left {
-    margin-left: 2rem;
-    width: 100%;
-} */
-
 .contact {
     align-content: center;
     font-size: 1.3rem;
@@ -242,6 +237,15 @@ a {
     width: 100%;
 }
 
+#icon {
+    opacity: 0.1;
+    padding: 2rem;
+}
+
+#icon:hover {
+    opacity: 1;
+}
+
 .display-inline {
     display: inline-block;
 }
@@ -249,6 +253,10 @@ a {
 .icon {
     border: 2px dotted grey;
     border-radius: 6rem 2rem;
+}
+
+.white-background {
+    background-color: white;
 }
 
 .border-bottom {
@@ -261,3 +269,19 @@ footer {
     padding-right: 1rem;
     margin: 4rem 0 2rem 0;
 }
+
+@media (max-width: 400px) {
+      nav ul {
+        float: none;
+        width: 100%;
+      }
+    }
+    
+@media (max-width: 700px) {
+  .grid {
+    grid-template-areas:
+      'avatar'
+      'name'
+      'bio';
+      }
+    }

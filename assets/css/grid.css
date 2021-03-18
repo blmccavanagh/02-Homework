@@ -79,6 +79,10 @@
     bottom: 20rem;
 }
 
+.grid-border:hover {
+    opacity: 0.5;
+}
+
 .radius1 {
     border-radius: 6rem 2rem;
 }
