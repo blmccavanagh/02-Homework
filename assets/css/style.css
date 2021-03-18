@@ -1,12 +1,12 @@
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     color: white;
     background-image: url("../images/background-image-1.jpg");
-    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
@@ -148,15 +148,24 @@ a {
     position: fixed;
     bottom: 5rem;
     left: 0;
-    width: 2rem;
+    width: 3rem;
+    padding: 0.5rem;
     background: rgb(199, 199, 199, 0.3);
+    border: hidden;
+    border-radius: 0 2rem 2rem 0;
     z-index: 99;
+    align-content: center;
 }
 
 .sidebar {
-    padding: 2px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     border: groove 2px gray;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.sidebar:hover {
+    border: outset 3px white;
+    background: white;
 }
 
 .section-header {
