@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/helper.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/flex.css">
@@ -55,7 +54,7 @@
 
         <!-- hero pic and bio-->
 
-        <section class="flex">
+        <section id="about-me" class="flex">
 
             <!-- section header -->
             <article class="section-header position-rel">
@@ -95,47 +94,51 @@
 
     <!-- grid portfolio -->
 
-    <section class="grid-container">
-        <h1 id="grid-header" class="handwriting glow">portfolio ...</h1>
+    <section id="portfolio" class="grid-container">
+        <h1 id="title" class="grid-header handwriting glow">portfolio ...</h1>
         <a id="feature" class="grid-border radius1" href=""><img class="portfolio-image"
                 src="./assets/images/exolvo.jpg" alt=""><span class="handwriting">Portfolio: One</span></a>
 
-        <a class="grid-border radius2" href=""><img class="portfolio-image" src="./assets/images/scotland-2.jpg"
+        <a id="item1" class="grid-border radius2" href=""><img class="portfolio-image" src="./assets/images/scotland-2.jpg"
                 alt=""><span class="handwriting">Portfolio: Two</span></a>
-        <a class="grid-border" href=""><img class="portfolio-image" src="./assets/images/scotland-1.jpg"
+        <a id="item2" class="grid-border" href=""><img class="portfolio-image" src="./assets/images/scotland-1.jpg"
                 alt=""><span class="handwriting">Portfolio: Three</span></a>
-        <a class="grid-border radius3" href=""><img class="portfolio-image" src="./assets/images/scotland-3.jpg"
+        <a id="item3" class="grid-border radius3" href=""><img class="portfolio-image" src="./assets/images/scotland-3.jpg"
                 alt=""><span class="handwriting">Portfolio: Four</span></a>
 
-        <a id="vertical" class="grid-border" href=""><img class="portfolio-image" src="./assets/images/smoke.jpg"
+        <a id="item4" class="grid-border vertical" href=""><img class="portfolio-image" src="./assets/images/smoke.jpg"
                 alt=""><span class="handwriting">Portfolio: Five</span></a>
 
-        <a class="grid-border radius4" href=""><img class="portfolio-image" src="./assets/images/perth-at-night.jpg"
+        <a id="item5" class="grid-border radius4" href=""><img class="portfolio-image" src="./assets/images/perth-at-night.jpg"
                 alt=""><span class="handwriting">Portfolio: Six</span></a>
-        <a class="grid-border radius5" href=""><img class="portfolio-image" src="./assets/images/dutoit-headshot.jpg"
+        <a id="item6" class="grid-border radius5" href=""><img class="portfolio-image" src="./assets/images/dutoit-headshot.jpg"
                 alt=""><span class="handwriting">Portfolio: Seven</span></a>
 
-        <a id="horizontal" class="grid-border" href=""><img class="portfolio-image" src="./assets/images/arrow.jpg"
+        <a id="item7" class="grid-border radius6" href=""><img class="portfolio-image" src="./assets/images/arrow.jpg"
                 alt=""><span class="handwriting">Portfolio: Eight</span></a>
     </section>
 
     <!-- footer -->
-    <section class="flex">
-        <article class="position-rel contact-section-header">
+    <section id="contact" class="border-bottom">
+        <section class="position-rel contact-section-header">
             <h1 class="position-abs glow handwriting">contact me ...</h1>
-        </article>
-        <section class="section-border contact-info">
+            <br><br><br>
+        </section>
+        <!-- <section class="section-border contact-info"> -->
             <br>
-            <footer>
-                <a href=""><img src="">phone</a>
-                <a href=""><img src="">email</a>
-                <a href=""><img src="">LinkedIn</a>
-                <a href=""><img src="">facebook</a>
-                <a href=""><img src="">instagram</a>
-                <a href=""><img src="">twitter</a>
-            </footer>
+            <section class="flex contact handwriting">
+                <a href=""><img class="icon" src="./assets/images/icons/phone.PNG">phone</a>
+                <a href=""><img class="icon" src="./assets/images/icons/email.PNG">email</a>
+                <a href=""><img class="icon" src="./assets/images/icons/resume.PNG">resume</a>
+                <a href=""><img class="icon" src="./assets/images/icons/github.PNG">GitHub</a>
+                <a href=""><img class="icon" src="./assets/images/icons/linkedin.PNG">LinkedIn</a>
+                <a href=""><img class="icon" src="./assets/images/icons/facebook.PNG">facebook</a>
+                <a href=""><img class="icon" src="./assets/images/icons/instagram.PNG">instagram</a>
+                <a href=""><img class="icon" src="./assets/images/icons/twitter.PNG">twitter</a>
+            </section>
+            <br>
             <p class="handwriting neon">call me, beep me, if you wanna reach me...</p>
-            <br>
+            <br><br><br>
         </section>
     </section>
 
