@@ -233,11 +233,6 @@ a {
     margin-right: 2rem;
 }
 
-footer+p {
-    text-align: right;
-    padding-right: 4rem;
-}
-
 .neon {
     color: #000000;
     animation: flicker 1.5s infinite alternate;
@@ -259,4 +254,10 @@ footer+p {
 .border-bottom {
     border: 2px 0 dotted rgb(77, 76, 76);
     border-radius: 10rem 1rem 10rem 1rem;
+}
+
+footer {
+    text-align: right;
+    padding-right: 1rem;
+    margin: 4rem 0 2rem 0;
 }
