@@ -285,7 +285,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-      nav {
+      nav ul {
         flex-direction: column;
       }
     .section-header {
@@ -325,5 +325,11 @@ footer {
       "contact"
       "contact7"
       "contact8";
+      }
+
+      .grid-container4 {
+          grid-template-areas: 
+          "header"
+          "nav";
       }
     }

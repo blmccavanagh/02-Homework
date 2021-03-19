@@ -146,5 +146,16 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
+    "title3 title3 title3 title3 title3 title3 title3 title3"
     "contact1 contact2 contact3 contact4 contact5 contact6 contact7 contact8";
+}
+
+.grid-container4 {
+    display: grid;
+    margin-left: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header nav";
 }
