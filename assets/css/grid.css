@@ -81,7 +81,7 @@
 .portfolio-image {
     object-fit: cover;
     width: 100%;
-    position: relative;
+    /* position: relative; */
 }
 
 .grid-border {
