@@ -144,7 +144,7 @@
     margin: 0.5rem;
     grid-gap: 1.5rem;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 60% auto;
     grid-template-areas:
     "title3 title3 title3 title3 title3 title3 title3 title3"
     "contact1 contact2 contact3 contact4 contact5 contact6 contact7 contact8";

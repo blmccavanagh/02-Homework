@@ -47,7 +47,7 @@ header {
     border-bottom: dotted 3px rgb(56, 56, 56);
     border-radius: 5rem 0 12rem 0;
     padding: 0 9.5rem 0 1.5rem;
-    width: auto;
+    width: 100%;
 }
 
 .header-padding {
@@ -135,7 +135,7 @@ a {
     animation: glow 4s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
     from {
         text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 4px #fff, 0 0 6px #FC05F8, 0 0 8px #FC05F8, 0 0 10px #FC05F8, 0 0 12px #FC05F8, 0 0 14px #FC05F8;
     }
@@ -236,7 +236,6 @@ a {
 }
 
 .contact-section-header {
-    width: 37rem;
     font-size: 2.5rem;
     margin-right: 2rem;
 }
@@ -283,53 +282,58 @@ footer {
     padding-right: 1rem;
     margin: 4rem 0 2rem 0;
 }
-
-@media only screen and (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-      }
-    .section-header {
-        width: 10rem;
-    }
-    }
     
 @media only screen and (max-width: 600px) {
-.grid-container1 {
-    grid-template-areas: 
-    "title1"
-    "headshot"
-    "bio";
-}
 
-  .grid-container2 {
-    grid-template-areas:
-      "title2"
-      "feature"
-      "item1"
-      "item2"
-      "item3"
-      "item4"
-      "item5"
-      "item5"
-      "item6"
-      "item7";
-      }
-
-      .grid-container3 {
-      grid-template-areas: 
-      "contact"
-      "contact"
-      "contact"
-      "contact"
-      "contact"
-      "contact"
-      "contact7"
-      "contact8";
-      }
-
-      .grid-container4 {
-          grid-template-areas: 
-          "header"
-          "nav";
-      }
+    nav ul {
+        flex-direction: column;
     }
+
+    nav ul li {
+        margin-left: 1.5rem;
+        border-bottom: 6px groove rgb(61, 61, 61);
+        border-radius: 0.5rem;
+        padding: 1.5rem 0 1.5rem 0.8rem;
+        font-size: 1.4rem;
+    }
+
+    .grid-container1 {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "title1"
+        "headshot"
+        "bio";
+    }
+
+    .grid-container2 {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "title2"
+        "feature"
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item5"
+        "item6"
+        "item7";
+    }
+
+    .grid-container3 {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "title3" 
+        "contact1 contact2"
+        "contact3 contact4"
+        "contact5 contact6"
+        "contact7 contact8";
+    }
+
+    .grid-container4 {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "nav";
+    }
+}
