@@ -285,6 +285,10 @@ footer {
     
 @media only screen and (max-width: 480px) {
 
+    h1 span {
+        display: block; 
+    } 
+
     nav ul li {
         margin-left: 1.5rem;
         border-bottom: 6px groove rgb(61, 61, 61);
