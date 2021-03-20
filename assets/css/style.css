@@ -283,17 +283,13 @@ footer {
     margin: 4rem 0 2rem 0;
 }
     
-@media only screen and (max-width: 600px) {
-
-    nav ul {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 480px) {
 
     nav ul li {
         margin-left: 1.5rem;
         border-bottom: 6px groove rgb(61, 61, 61);
         border-radius: 0.5rem;
-        padding: 1.5rem 0 1.5rem 0.8rem;
+        padding: 0 0 0 0.5rem;
         font-size: 1.4rem;
     }
 
@@ -305,7 +301,16 @@ footer {
         "bio";
     }
 
-    .grid-container2 {
+    .hero {
+        margin: 1rem;
+        width: 100%;
+        max-width: 50rem;
+        align-self: center;
+        border: 2px dotted rgb(56, 56, 56);
+        border-radius: 2rem 6rem;
+    }
+
+    /* .grid-container2 {
         grid-template-columns: 100%;
         grid-template-areas:
         "title2"
@@ -318,16 +323,46 @@ footer {
         "item5"
         "item6"
         "item7";
+    } */
+
+    .grid-container2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #item1 {
+        border-radius: 6rem 2rem;
+    }
+
+    #item2 {
+        border-radius: 6rem 2rem;
+    }
+
+    #item3 {
+        border-radius: 6rem 2rem;
+    }
+
+    #item4 {
+        border-radius: 6rem 2rem;
+    }
+
+    #item5 {
+        border-radius: 6rem 2rem;
+    }
+
+    #item6 {
+        border-radius: 6rem 2rem;
+    }
+
+    #item7 {
+        border-radius: 6rem 2rem;
     }
 
     .grid-container3 {
-        grid-template-columns: 100%;
-        grid-template-areas:
-        "title3" 
-        "contact1 contact2"
-        "contact3 contact4"
-        "contact5 contact6"
-        "contact7 contact8";
+        padding-top: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .grid-container4 {
@@ -335,5 +370,13 @@ footer {
         grid-template-areas: 
         "header"
         "nav";
+    }
+
+    .grid-header {
+        border: hidden;
+    }
+
+    .contact-link {
+        width: 25%;
     }
 }
