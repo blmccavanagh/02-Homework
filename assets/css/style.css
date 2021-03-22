@@ -285,6 +285,10 @@ footer {
     
 @media only screen and (max-width: 480px) {
 
+    body {
+        margin: 0;
+    }
+
     h1 span {
         display: block; 
     } 
